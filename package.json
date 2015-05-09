@@ -1,0 +1,25 @@
+{
+  "name": "gulp-bootstrap-sass-template",
+  "version": "1.0.0",
+  "description": "Custom template composed of gulp, bootstrap, sass, fontawesome...",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/franmzy/gulp-bootstrap-sass-template.git"
+  },
+  "author": "Fran Muñoz <fran.mzy@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franmzy/gulp-bootstrap-sass-template/issues"
+  },
+  "homepage": "https://github.com/franmzy/gulp-bootstrap-sass-template",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-notify": "^2.2.0",
+    "gulp-ruby-sass": "^1.0.5"
+  }
+}

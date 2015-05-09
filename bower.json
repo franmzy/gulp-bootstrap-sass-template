@@ -1,0 +1,20 @@
+{
+  "name": "gulp-bootstrap-sass-template",
+  "version": "0.0.0",
+  "authors": [
+    "Fran Muñoz <fran.mzy@gmail.com>"
+  ],
+  "description": "Custom tempolate composed of gulp, bootstrap, sass, fontawesome...",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.4",
+    "fontawesome": "~4.3.0"
+  }
+}

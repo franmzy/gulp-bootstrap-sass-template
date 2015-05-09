@@ -1,0 +1,29 @@
+// Modules and Variables
+@import "partials/base";
+
+// Partials
+// @import "partials/reset";
+// @import "partials/typography";
+// @import "partials/buttons";
+// @import "partials/figures";
+// @import "partials/grids";
+// ...
+
+// Third-party
+@import "bootstrap";
+@import "font-awesome";
+
+// Add custom font
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300);
+
+$font-family-base: "Raleway", sans-serif;
+
+// Bootstrap Starter Template Styles
+body {
+    padding-top: 50px;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
