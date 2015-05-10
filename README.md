@@ -1,10 +1,11 @@
 # gulp-bootstrap-sass-template
-Custom template composed of gulp, bootstrap, sass, fontawesome...
+Custom template composed of gulp, bootstrap, sass, fontawesome and LiveReload
 
 ## Installation
 
 1. Clone this repo.
 2. cd into the directory and run `npm install`
-3. Run `gulp` and it will pull in all dependencies and compile.
+3. Run `gulp install` and it will pull in all dependencies and compile.
+4. To run LiveReload type `gulp`, it runs by deafult on port 4000.
 
 
