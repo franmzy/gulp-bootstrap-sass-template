@@ -2,7 +2,7 @@
   "name": "gulp-bootstrap-sass-template",
   "version": "1.0.0",
   "description": "Custom template composed of gulp, bootstrap, sass, fontawesome...",
-  "main": "gulpfile.js",
+  "main": "./public/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/franmzy/gulp-bootstrap-sass-template",
   "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "express": "^4.12.3",
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
     "gulp-notify": "^2.2.0",
-    "gulp-ruby-sass": "^1.0.5"
+    "gulp-ruby-sass": "^1.0.5",
+    "tiny-lr": "^0.1.5"
   }
 }
