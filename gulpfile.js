@@ -6,8 +6,10 @@ var gulp = require('gulp'),
 var liveReload = require('./liveReload.js');
 
 var config = { 
-    sassPath: './resources/sass',
-     bowerDir: './resources/sass/vendor' 
+    sassPath: './scss',
+     bowerDir: './assets' ,
+    fontsDest: './fonts',
+    cssDest: './css'
 }
 
 gulp.task('bower', function() { 
@@ -16,21 +18,21 @@ gulp.task('bower', function() { 
 
 gulp.task('icons', function() { 
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*') 
-        .pipe(gulp.dest('./public/fonts')); 
+        .pipe(gulp.dest(config.fontsDest)); 
 });
 
 gulp.task('sass', function() {
     return sass(config.sassPath + '/style.scss', {
             style: 'compressed',
              loadPath: [ 
-                './resources/sass',  
+                config.sassPath,  
                 config.bowerDir + '/bootstrap-sass-official/assets/stylesheets',  
                 config.bowerDir + '/fontawesome/scss'
             ] 
         }).on('error', notify.onError(function (error) {
             return "Error: " + error.message;
          }))
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest(config.cssDest));
 });
 
 gulp.task('install', ['bower', 'icons', 'sass']);

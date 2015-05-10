@@ -1,12 +1,8 @@
 var gulp = require('gulp');
 
 var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = __dirname + '/public';
+var EXPRESS_ROOT = __dirname;
 var LIVERELOAD_PORT = 35729;
-
-var config = { 
-  publicPath: './public',
-}
 
 // Let's make things more readable by
 // encapsulating each part's setup
@@ -50,5 +46,5 @@ function notifyLivereload(event) {
 exports.startSync = function() {
   startExpress();
   startLivereload();
-  gulp.watch([config.publicPath + '/*.html', config.publicPath + '/css/*.css'], notifyLivereload);
+  gulp.watch(['./*.html','./css/*.css'], notifyLivereload);
 };
