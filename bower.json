@@ -17,5 +17,5 @@
     "bootstrap-sass-official": "~3.3.4",
     "fontawesome": "~4.3.0"
   },
-  "directory" : "assets"
+  "homepage": "https://github.com/franmzy/gulp-bootstrap-sass-template"
 }
