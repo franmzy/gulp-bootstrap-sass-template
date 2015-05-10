@@ -13,7 +13,7 @@ var config = { 
 }
 
 gulp.task('bower', function() { 
-    return bower() .pipe(gulp.dest(config.bowerDir)) 
+    return bower(config.bowerDir) 
 });
 
 gulp.task('icons', function() { 
@@ -21,7 +21,7 @@ gulp.task('icons', function() { 
         .pipe(gulp.dest(config.fontsDest)); 
 });
 
-gulp.task('sass', function() {
+gulp.task('sass', ['bower', 'icons'], function() {
     return sass(config.sassPath + '/style.scss', {
             style: 'compressed',
              loadPath: [ 
