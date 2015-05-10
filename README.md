@@ -6,6 +6,6 @@ Custom template composed of gulp, bootstrap, sass, fontawesome and LiveReload
 1. Clone this repo.
 2. cd into the directory and run `npm install`
 3. Run `gulp install` and it will pull in all dependencies and compile.
-4. To run LiveReload type `gulp`, it runs by deafult on port 4000.
+4. Execute LiveReload by typing `gulp`, it runs by deafult on port 4000.
 
 
